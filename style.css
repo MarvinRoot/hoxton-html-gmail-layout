@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  * ul {
+    list-style-type: none;
+  }
+  .container {
+    display: grid;
+    grid-template:
+      "header     header  header" 50px
+      "left-menu  main    right-menu" 1fr
+      "left-bottom  main   right-menu" 1fr/
+      200px 1fr 200px;
+  
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .header {
+    color: gray;
+    font-size: 20px;
+    grid-area: header;
+    background-color: rgba(255, 255, 0, 0.3);
+  }
+  
+  .header p {
+    letter-spacing: 4px;
+    margin: 14px;
+    float: left;
+  }
+  
+  #logo {
+    float: left;
+    width: 40px;
+    margin: 6px;
+  }
+  
+  .header input[type="text"] {
+    width: 600px;
+    float: left;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 50px;
+    border: none;
+    font-size: 17px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 16px;
+    left: 300px;
+    width: 14px;
+  }
+  
+  #settings-icon {
+    margin: 6px 20px;
+    float: right;
+    width: 37px;
+  }
+  
+  #menu-icon {
+    margin: 10px 20px;
+    float: right;
+    width: 30px;
+  }
+  
+  #support-icon {
+    margin: 10px 20px;
+    float: right;
+    width: 30px;
+  }
+  
+  .left-menu-top {
+    grid-area: left-menu;
+    background-color: rgba(255, 255, 178);
+    height: 0.5;
+    overflow-y: scroll;
+  }
+  
+  #compose {
+    color: rgb(99, 30, 42);
+    font-size: 20px;
+    background-color: rgba(255, 255, 178);
+    border-radius: 25px;
+    float: left;
+    padding-left: 40px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  
+  .left-menu-top-list {
+    line-height: 50px;
+    letter-spacing: 4px;
+    float: left;
+    margin: 20px 40px;
+    text-align: center;
+  }
+  
+  .left-menu-bottom {
+    grid-area: left-bottom;
+    background-color: rgba(255, 255, 178);
+    height: 0.5;
+    overflow-y: scroll;
+  }
+  
+  .left-menu-bottom-list {
+    font-size: 13px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    float: left;
+    margin: 20px 20px;
+    text-align: center;
+  }
+  
+  * a {
+    text-decoration: none;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: rgba(255, 0, 255, 0.4);
+  }
+  
+  .main-table {
+    overflow-y: auto;
+    height: 92.3vh;
+  }
+  .main-table thead th {
+    position: sticky;
+    top: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    height: 40px;
+    width: 100%;
+    background: pink;
+  }
+  
+  td {
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(255, 255, 178);
+    border: solid 1px rgba(99, 30, 42, 0.2);
+  }
+  
+  .right-menu {
+    grid-area: right-menu;
+    background-color: rgba(255, 255, 178);
+  }
+  
+  .right-menu ul {
+    line-height: 50px;
+    letter-spacing: 4px;
+    float: left;
+    margin: 20px 10px;
+    text-align: center;
+  }
+  
